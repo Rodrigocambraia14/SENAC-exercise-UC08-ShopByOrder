@@ -1,0 +1,26 @@
+@model IEnumerable<UsuarioPedido>
+@{
+    ViewData["Title"] = "ListarPedido";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Produto</th>
+            <th>Ações</th></tr>
+    </thead>
+    @foreach(UsuarioPedido u in Model)
+    {
+        <tr>
+            <td>@u.Nome</td>
+            <td>@u.Email</td>
+            <td>@u.Produto</td>
+            <td>
+                <p><a href="mailto:@u.Email&#64gmail.com?subject=Olá%20@u.Nome">Enviar email</a></p>
+                <p><a href="/Home/RemoverUser?Email=@u.Email">Excluir Pedido</a></p> 
+                </td> <!-- optei por excluir os pedidos pelo Email do usuário utilizado, para remover todos os vinculados de uma só vez -->
+        </tr>
+    }
+</table>

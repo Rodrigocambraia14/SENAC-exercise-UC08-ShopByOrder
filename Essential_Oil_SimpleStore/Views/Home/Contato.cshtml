@@ -1,0 +1,60 @@
+@model UsuarioPedido;
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+    <main>
+     
+        <h2>Contatos de <b>Aroma Life</b></h2>
+        <div class="grid-1">
+            <div class="item-1">
+               <a  class="iconHover" href="https://www.Twitter.com.br"> <img src="~/images/twitter.png" width="100px" height="100px" alt="Twitter"></a> 
+               <!-- links de redes sociais posteriomente serão direcionados para uma conta fictícia -->
+            </div >
+            <div  class="item-2">
+                <a class="iconHover" href="https://www.facebook.com.br"><img src="~/images/facebook.png"  width="100px" height="100px"alt="Facebook"></a>
+            </div >
+            <div  class="item-3">
+                <a class="iconHover" href="https://www.Instagram.com.br"><img src="~/images/instagram.png"  width="100px" height="100px" alt="Instagram"></a>
+            </div >
+            <div  class="item-4">
+                <a class="iconHover" href="https://api.whatsapp.com/send?phone=5521997622075&text=Bem%20vindo(a)%20%C3%A0%20Aroma%20Life!"><img src="~/images/whatsapp.png"   width="100px" height="100px"  alt="Whatsapp"></a>
+            </div >
+        </div >
+       
+        <p>Escolha a plataforma preferida e esteja sempre pertinho da gente!</p>
+        
+     
+        
+         <p>Não tem nenhuma das plataformas anteriores? Faz um cadastro que entramos em contato contigo, é rapidinho!</p>
+    <fieldset>
+        <div id="formCadastro">
+         <form method="POST" asp-action="Confirmacao">
+            <p>
+                <label asp-for="Nome">Nome:</label>
+                <input class ="inputPadrao" asp-for="Nome" type="text" placeholder="Seu nome" required>
+            </p>
+            <p>
+                <label asp-for="Email">Email:</label>
+                <input class ="inputPadrao" asp-for="Email" type="email" placeholder="example@gmail.com" required>
+            </p>
+            <p>
+                <label asp-for="Produto">Produto desejado:</label>
+                <select class ="inputPadrao" name="Produto" required>
+                    <option value="Óleo essencial - lavanda">Óleo essencial - lavanda</option>
+                    <option value="Sabonete artesanal - lavanda">Sabonete artesanal - lavanda</option>
+                    <option value="Kit cosméticos artesanais">Kit cosméticos artesanais</option>
+                    <option value="Óleo essencial - canela">Óleo essencial - canela</option>
+                </select>
+            </p>
+            <p>
+                <input class="btn btn-primary" type="submit" value="Enviar">
+            </p>
+         </form>
+        </div> 
+    </fieldset>
+    
+    </main>
+   
+    
+

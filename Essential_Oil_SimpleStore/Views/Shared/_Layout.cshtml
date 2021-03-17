@@ -1,0 +1,74 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Aroma Life</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="~/aroma.ico">
+    
+</head>
+<body>                 
+    <div class="logo" >
+        <img class="logo" src="~/Images/logo4.png" alt="Site Logo" />
+    </div>
+
+      <nav id="menu">
+          <ul >
+            <div>
+              <li ><a  asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            </div>
+            <div>
+              <li ><a  asp-area="" asp-controller="Home" asp-action="Produtos">Produtos</a></li>
+            </div>
+             <div>
+              <li ><a  asp-area="" asp-controller="Home" asp-action="Projetos">Projetos</a></li>
+            </div>
+            <div >
+              <li ><a  asp-area="" asp-controller="Home" asp-action="Noticias">Notícias</a></li>
+            </div>
+            <div >
+              <li ><a  asp-area="" asp-controller="Home" asp-action="Contato">Contatos</a></li>
+            </div>
+          </ul>
+      
+            <header id="ADM">
+                <a asp-action="Login">Login (ADM) - @Context.Session.GetString("LoginUsuario")  |</a>
+                <a asp-action="Logout">Logout   |</a>
+                <a asp-action="ListarPedido">Pedido</a>
+            </header>
+      </nav>      
+            
+          
+     
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   <footer id="base"> 
+        <div id ="rodape" class="container">
+          <ul id="textoFooter">
+             <div>
+              <li class="footer_text"><a asp-action="QuemSomos">Quem somos</a></li>
+             </div>
+             <div>
+              <li class="footer_text"><a asp-action="Index"> &copy; 2021 - Aroma Life</a></li>
+             </div>
+              <li class="footer_text"><a asp-action="Galeria">Galeria</a></li>
+             </div>
+          </ul>
+        </div>   
+      </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

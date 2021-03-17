@@ -332,3 +332,16 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+*.json
+*.csproj
+*.js
+*.map
+Essential_Oil_SimpleStore/Views/Shared/Error.cshtml
+Essential_Oil_SimpleStore/Views/Shared/_ValidationScriptsPartial.cshtml
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+Essential_Oil_SimpleStore/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+Essential_Oil_SimpleStore/Models/ErrorViewModel.cs
