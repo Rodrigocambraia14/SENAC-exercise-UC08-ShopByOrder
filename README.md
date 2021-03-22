@@ -5,6 +5,8 @@ Project made as an exercise at SENAC, made with ASP.NET framework, C#, MySQL, HT
 
 It has a few products, a gallery, Login / Logout system and a talk-to-seller function to make orders.
 
+MySQL script = "pedido";
+
 **This project is subject to receive new updates to improve CSS and insert CRUD funcions to products soon.**
 
 
