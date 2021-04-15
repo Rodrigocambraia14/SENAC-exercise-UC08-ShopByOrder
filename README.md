@@ -1,7 +1,7 @@
-# SENAC-exercise-UC08-ShopByOrder
- Essential oil store without E-commerce - SENAC 
+# ShopByOrder
+ Essential oil store without E-commerce 
 
-Project made as an exercise at SENAC, made with ASP.NET framework, C#, MySQL, HTML5 and CSS3.
+Project made with ASP.NET framework, C#, MySQL, HTML5 and CSS3.
 
 It has a few products, a gallery, Login / Logout system and a talk-to-seller function to make orders.
 
